@@ -1,4 +1,4 @@
-# Typecho
+# Typecho 那些事
 ## 背景
 * Wordpress 未成气候
 * PHP和开源兴起
