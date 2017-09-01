@@ -1,7 +1,8 @@
 # 你所不知道的 Resource
 
 ## 前言
-很久没写文章了，在新的公司新的遇到了新的伙伴，胖丁哥哥让我看了 `laracon 2017 - Adam Wathan` 的视频，略微手痒想分享一下自己的东西，这边使用的是 `laravel` 作为讲解，但是思想却不局限于于 `laravel` 或者 `php`。呦呦呦呦，这边是差不多的小二先生~~~~
+很久没写文章了，在新的公司新的遇到了新的伙伴，胖丁哥哥让我看了 `laracon 2017 - Adam Wathan` 的视频，略微手痒想分享一下自己的东西，这边使用的是 `laravel` 作为讲解，但是思想却不局限于于 `laravel` 或者 `php`。
+呦呦呦呦，这边是差不多的小二先生~~~~
 
 ## 差不多的 路由
 平时我们写代码的时候经常会写出很多下面这样的路由：
@@ -30,7 +31,7 @@ Route::get('/podcasts/{id}/episodes', 'PodcastController@indexEpisode');
 Route::post('/podcasts/{id}/episodes', 'PodcastController@storeEpisode');
 Route::get('/podcasts/{id}/episodes/new', 'PodcastController@createEpisode');
 ```
-应该非常熟悉这样所谓 `嵌套资源`，随着项目的扩大，这样会使得控制器一个个的变得胖起来逻辑开始复杂起来，现在让我们开始为这差不多的路由做个瘦身。
+应该非常熟悉这样所谓 `嵌套资源`，随着项目的扩大，这样会使得控制器一个个的变得胖起来逻辑开始复杂起来，现在让我们开始为这差不多的路由做个变身。
 
 ## 差不多的 CURD / REST
 这边进行一个小插曲，对资源总结起来大概就是 7 个标准的 Action ：
@@ -160,4 +161,7 @@ Route::resource('published-podcasts', 'PublishedPodcastsController');
 惊喜不惊喜，刺激不刺激，好看不好看，简洁不简洁！！！
 
 ## 结尾
-其实，我们可以把 `Everything` 都看做是资源，对其进行 `CURD` 的操作，带来的好处也是显而易见，更加轻的控制器，更加进行的分类，更加的容易控制，更加容易的管理，更加的 RESTful。
+其实，我们可以把 `Everything` 都看做是资源，对其进行 `CURD` 的操作，带来的好处也是显而易见，更加轻的控制器，更加进行的分类，更加的 RESTful。
+
+## 相关资源
+* [laracon 2017 - Adam Wathan](https://streamacon.com/video/laracon-us-2017/day-1-adam-wathan)
